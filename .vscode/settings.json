@@ -1,0 +1,16 @@
+{
+"[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+    }
+},
+"java.home": "/usr/lib/jvm/default-java",
+"java.configuration.runtimes": [
+    {
+    "name": "JavaSE-21",
+    "path": "/usr/lib/jvm/default-java"
+    }
+]
+}

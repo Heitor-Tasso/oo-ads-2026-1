@@ -1,11 +1,8 @@
-import java.util.Date;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         teste01();
         teste02();
+        teste03();
     }
 
     public static void teste01() {
@@ -15,8 +12,7 @@ public class Main {
                 54,
                 "123.456.789-01",
                 "gervasio.garcia@empresa.com.br",
-                "(16) 98765-4321"
-        );
+                "(16) 98765-4321");
 
         // Chamando o método para exibir os dados da pessoa 1
         System.out.println(pessoa1.mostrarDados());
@@ -59,8 +55,7 @@ public class Main {
                 "F0123",
                 "Assistente Financeiro",
                 3500.00,
-                "Gerência Financeira"
-        );
+                "Gerência Financeira");
 
         // Exibindo os dados do funcionário
         System.out.println(func1.mostrarDados());
@@ -81,5 +76,61 @@ public class Main {
 
     public static void teste02() {
         // Espaço reservado para testes adicionais
+    }
+
+    public static void teste03() {
+        // Instanciando três contas bancárias simples
+        ContaBancaria conta1 = new ContaBancaria("Heitor", 1000.0);
+        ContaBancaria conta2 = new ContaBancaria("Marina", 2000.0);
+        ContaBancaria conta3 = new ContaBancaria("Rafael", 5000.0);
+
+        // Realizando operações na conta 1
+        conta1.depositar(200.0);
+        conta1.sacar(150.0);
+
+        // Realizando operações na conta 2
+        conta2.depositar(300.0);
+        conta2.sacar(100.0);
+
+        // Realizando operações na conta 3
+        conta3.sacar(500.0);
+        conta3.depositar(1000.0);
+
+        // Exibindo informações das contas bancárias
+        System.out.println("\n--- Conta Bancária 1 ---");
+        conta1.exibirSaldo();
+
+        System.out.println("\n--- Conta Bancária 2 ---");
+        conta2.exibirSaldo();
+
+        System.out.println("\n--- Conta Bancária 3 ---");
+        conta3.exibirSaldo();
+
+        // Instanciando três contas especiais com limite
+        ContaEspecial contaE1 = new ContaEspecial("Heitor", 1000.0, 500.0);
+        ContaEspecial contaE2 = new ContaEspecial("Beatriz", 2000.0, 500.0);
+        ContaEspecial contaE3 = new ContaEspecial("Carlos", 5000.0, 450.0);
+        // Realizando operações na conta especial 1
+        contaE1.depositar(200.0);
+        contaE1.sacar(100.0);
+        // Realizando operações na conta especial 2
+        contaE2.depositar(250.0);
+        contaE2.sacar(100.0);
+        // Realizando operações na conta especial 3
+        contaE3.depositar(300.0);
+        contaE3.sacar(160.0);
+
+        // Exibindo informações das contas especiais
+        System.out.println("\n--- Conta Especial 1 ---");
+        contaE1.exibirSaldoReal();
+        contaE1.exibirSaldo();
+
+        System.out.println("\n--- Conta Especial 2 ---");
+        contaE2.exibirSaldoReal();
+        contaE2.exibirSaldo();
+
+        System.out.println("\n--- Conta Especial 3 ---");
+        contaE3.exibirSaldoReal();
+        contaE3.exibirSaldo();
     }
 }
