@@ -2,12 +2,18 @@
 "version": "0.2.0",
 "configurations": [
     {
-    "name": "Java Debug",
-    "type": "java",
-    "name": "Launch Current File",
-    "request": "launch",
-    "mainClass": "${file}",
-    "cwd": "${workspaceFolder}"
+        "type": "java",
+        "name": "Main",
+        "request": "launch",
+        "mainClass": "Main",
+        "projectName": "oo-ads-2026-1_cd6e8b5c"
+    },
+    {
+        "name": "Launch Current File",
+        "type": "java",
+        "request": "launch",
+        "mainClass": "${file}",
+        "cwd": "${workspaceFolder}"
     }
 ]
 }

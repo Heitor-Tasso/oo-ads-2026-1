@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        teste01();
-        teste02();
-        teste03();
+        // teste01();
+        // teste02();
+        // teste03();
+        prova1();
     }
 
     public static void teste01() {
@@ -132,5 +133,54 @@ public class Main {
         System.out.println("\n--- Conta Especial 3 ---");
         contaE3.exibirSaldoReal();
         contaE3.exibirSaldo();
+    }
+
+    public static void prova1() {
+
+        Estudante estudante1 = new Estudante(
+                "Maria",
+                24,
+                "999.999.999-99",
+                "maria@gmail.com",
+                "(16) 00000-0000",
+                "Análise e Desenvolvimento de Sistemas",
+                7.5,
+                8.0);
+        Estudante estudante2 = new Estudante(
+                "João",
+                26,
+                "999.999.999-99",
+                "joao@gmail.com",
+                "(16) 00000-0000",
+                "Análise e Desenvolvimento de Sistemas",
+                7.5,
+                8.0);
+        Estudante estudante3 = new Estudante(
+                "Ana",
+                24,
+                "999.999.999-99",
+                "ana@gmail.com",
+                "(16) 00000-0000",
+                "Análise e Desenvolvimento de Sistemas",
+                8.5,
+                7.0);
+        Estudante estudante4 = new Estudante(
+                "Heitor Gonçalves Couto Tasso",
+                21,
+                "999.999.999-99",
+                "heitortasso12@gmail.com",
+                "(16) 99399-9140",
+                "Análise e Desenvolvimento de Sistemas",
+                10.0,
+                10.0);
+
+        System.out.println("--- Estudante 1 ---");
+        System.out.println(estudante1.mostrarDados());
+        System.out.println("\n--- Estudante 2 ---");
+        System.out.println(estudante2.mostrarDados());
+        System.out.println("\n--- Estudante 3 ---");
+        System.out.println(estudante3.mostrarDados());
+        System.out.println("\n--- Estudante 4 ---");
+        System.out.println(estudante4.mostrarDados());
     }
 }

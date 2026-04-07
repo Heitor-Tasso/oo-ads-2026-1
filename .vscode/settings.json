@@ -3,7 +3,7 @@
     "editor.defaultFormatter": "redhat.java",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+        "source.organizeImports": "explicit"
     }
 },
 "java.home": "/usr/lib/jvm/default-java",
